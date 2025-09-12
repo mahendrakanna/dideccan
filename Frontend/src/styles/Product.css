@@ -42,8 +42,6 @@
   line-height: 1.7;
   text-align: justify;
 }
-
-/* 🔹 Tablets */
 @media (max-width: 1024px) {
   .heading {
     font-size: 2rem;
@@ -62,7 +60,6 @@
   }
 }
 
-/* 🔹 Mobiles */
 @media (max-width: 768px) {
   .product-card {
     flex-direction: column;
@@ -84,8 +81,6 @@
     text-align: left;
   }
 }
-
-/* 🔹 Small Mobiles */
 @media (max-width: 480px) {
   .heading {
     font-size: 1.5rem;

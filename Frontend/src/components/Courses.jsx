@@ -32,9 +32,9 @@ const Services = () => {
           </p>
         </div>
 
-        {/* 3 cards side by side */}
+       
         <div className="program-grid">
-          {/* Program Highlights */}
+          
           <div className="program-card">
             <h3><Award className=" heading-icon" /> Program Highlights</h3>
             <ul>
@@ -44,7 +44,7 @@ const Services = () => {
             </ul>
           </div>
 
-          {/* Available + Coming Soon */}
+          
           <div className="program-card">
             <h3><BookOpen className="heading-icon" /> Available Courses</h3>
             <ul>
@@ -61,7 +61,6 @@ const Services = () => {
             </ul>
           </div>
 
-          {/* Why Choose Us */}
           <div className="program-card">
             <h3><CheckCircle className="heading-icon" /> Why Choose Us?</h3>
             <ul>
@@ -72,7 +71,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* CTA */}
+   
         <div className="program-cta">
          <LoginForm/>
         </div>

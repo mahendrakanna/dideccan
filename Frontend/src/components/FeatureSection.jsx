@@ -7,7 +7,6 @@ const features = [
     icon: <BookOpen size={32} />,
     title: "Early Literacy Fun",
     description:
-      // "Master phonics, letters, and sight words through playful activities and delightful stories."
       "Master phonics, letters, and sight words through playful activities and delightful stories. Each session is designed to spark curiosity and build confidence, turning reading into an adventure."
   },
   {

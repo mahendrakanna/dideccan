@@ -17,7 +17,6 @@
 .login-btn:hover {
   background: #0056a0;
 }
-
 .form-overlay {
   position: fixed;
   top: 0;
@@ -29,9 +28,8 @@
   justify-content: center;
   align-items: center;
   z-index: 2000;
-  overflow-y: auto; /* in case form is tall on mobile */
+  overflow-y: auto; 
 }
-
 .form-content {
   background: #fff;
   padding: 20px 25px;
@@ -40,9 +38,8 @@
   max-width: 95%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease-in-out;
-  position: relative; /* for close button */
+  position: relative; 
 }
-
 .login-form {
   display: flex;
   flex-direction: column;
@@ -74,7 +71,6 @@
 .register-btn:hover {
   background-color: #003f73;
 }
-
 .close-btn {
   color: red;
   background: transparent;
@@ -86,7 +82,6 @@
   top: 15px;
   right: 15px;
 }
-
 @keyframes fadeIn {
   from {
     transform: scale(0.95);
@@ -97,12 +92,7 @@
     opacity: 1;
   }
 }
-
-/* ===================== */
 /* RESPONSIVENESS */
-/* ===================== */
-
-/* Large tablets (<= 1024px) */
 @media (max-width: 1024px) {
   .form-content {
     width: 40%;
@@ -113,8 +103,6 @@
     height: 32px;
   }
 }
-
-/* Tablets (<= 768px) */
 @media (max-width: 768px) {
   .form-content {
     width: 50%;
@@ -134,8 +122,6 @@
     padding: 7px;
   }
 }
-
-/* Mobile phones (<= 500px) */
 @media (max-width: 500px) {
   .form-content {
     width: 70%;
