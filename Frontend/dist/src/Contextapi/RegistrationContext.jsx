@@ -1,4 +1,7 @@
 import React, { createContext, useState } from "react";
+import apiList from '../api.json'
+
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 export const RegistrationContext = createContext();
 
@@ -7,11 +10,11 @@ export const RegistrationProvider = ({ children }) => {
 
   const submitRegistration = async (formData) => {
     setLoading(true);
-    // http://192.168.0.13:8000/api/register/
+
     try {
-      const response = await fetch("http://192.168.0.13:8003/api/register/", {
+      const response = await fetch(`${BASE_URL}${apiList.login.register}`, {
         method: "POST",
-        body: formData, 
+        body: formData,
       });
 
       const result = await response.json();
