@@ -51,11 +51,27 @@ def register(request):
             )
             resume.close()
 
-        mail.send()
+        # mail.send()
+        try:
+            mail.send(fail_silently=False)
+            return JsonResponse({
+                "message": "Registration successful, email sent to HR!",
+                "message_type": "success",
+                "status_code": status.HTTP_200_OK
+            })
+        except Exception as e:
+            return JsonResponse({
+                "message": f"Registration  email failed: {str(e)}",
+                "message_type": "error",
+                "status_code": status.HTTP_500_INTERNAL_SERVER_ERROR
+            })
 
         # return JsonResponse({"message": "Registration successful, email sent to HR!"})
-        return JsonResponse({"message":"Invalid or expired token.",
+        # return JsonResponse({"message":"Registration successful.",
+        #         "message_type":"error",
+        #         "status_code":status.HTTP_200_OK})
+
+    # return JsonResponse({"error": "Invalid request"},status=400)
+    return JsonResponse({"message":"Invalid request.",
                 "message_type":"error",
                 "status_code":status.HTTP_400_BAD_REQUEST})
-
-    return JsonResponse({"error": "Invalid request"},status=400)
