@@ -1,0 +1,52 @@
+import Banner from '../components/Banner';
+import FeatureSection from '../components/FeatureSection';
+import Footer from '../components/Footer';
+import GetStartedSection from '../components/GetStartedSection';
+import Navbar from '../components/Navbar';
+import Courses from '../components/Courses';
+import Slide from '../components/Slide';
+import ClientsSection from '../components/ClientsSection';
+import Contact from '../components/Contact';
+import BackToTop from '../components/BackToTop';
+import StudentBook from '../Pages/StudentBook';  
+import ScrollToTop from '../Pages/ScrollToTop'; 
+import HappyRide from '../Pages/HappyRide';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BusinessGuider from '../Pages/BusinessGuider';
+function Routers() {
+  return (
+    <Router>
+      <Navbar />
+      <ScrollToTop /> 
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Banner />
+              <Slide />
+              <FeatureSection />
+              <Courses />
+              <ClientsSection />
+              <GetStartedSection />
+            </>
+          }
+        />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/StudentBook" element={<StudentBook />} />
+        <Route path="/HappyRide" element={<HappyRide />} />
+         <Route path="/BusinessGuider" element={<BusinessGuider />} />
+          
+           <Route path="/contactus" element={<Contact />} />
+
+      </Routes>
+      
+      <Footer />
+      <BackToTop />
+    </Router>
+  );
+}
+
+export default Routers;
+
+

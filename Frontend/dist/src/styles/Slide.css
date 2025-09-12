@@ -1,0 +1,78 @@
+
+
+.Container-1 {
+  height: 43.75rem; 
+  background-image: url('../assets/images/image1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px;
+}
+.contentbox {
+  width: 60%;
+  background-color: #0a1a66;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.contentbox h1 {
+  text-align: center;
+  padding: 0rem 1.25rem;
+  font-size: 2rem;
+}
+.contentbox p {
+  text-align: center;
+  padding: 0rem 2.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* 🔹 Responsive Styles */
+@media (max-width: 1024px) {
+  .contentbox {
+    width: 75%;
+    padding: 1.5rem;
+  }
+  .contentbox h1 {
+    font-size: 1.8rem;
+  }
+  .contentbox p {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 768px) {
+  .Container-1 {
+    height: auto; 
+    background-attachment: scroll; 
+    padding: 40px 20px;
+  }
+  .contentbox {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .contentbox h1 {
+    font-size: 1.5rem;
+  }
+  .contentbox p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .contentbox {
+    width: 100%;
+    padding: 1rem;
+  }
+  .contentbox h1 {
+    font-size: 1.2rem;
+  }
+  .contentbox p {
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+  }
+}
