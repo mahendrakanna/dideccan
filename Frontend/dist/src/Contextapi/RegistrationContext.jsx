@@ -11,6 +11,8 @@ export const RegistrationProvider = ({ children }) => {
   const submitRegistration = async (formData) => {
     setLoading(true);
 
+    
+
     try {
       const response = await fetch(`${BASE_URL}${apiList.login.register}`, {
         method: "POST",
