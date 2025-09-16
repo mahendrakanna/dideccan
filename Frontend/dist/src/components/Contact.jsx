@@ -23,7 +23,7 @@ function Contact() {
             </li>
             <li>
               <Mail size={20} color="#0056a0" className="contact-icons" />
-              <strong>hr@dideccanindiatech.com</strong>
+              <strong>hr@dideccanindia.com</strong>
             </li>
             <li>
               <MapPin size={25} color="#0056a0" className="contact-icons" />
