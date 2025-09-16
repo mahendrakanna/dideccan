@@ -24,6 +24,7 @@ function Contact() {
             <li>
               <Mail size={20} color="#0056a0" className="contact-icons" />
               <strong>hr@dideccanindia.com</strong>
+              
             </li>
             <li>
               <MapPin size={25} color="#0056a0" className="contact-icons" />
