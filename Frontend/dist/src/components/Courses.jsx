@@ -6,11 +6,11 @@ import {
   BookOpen,
   TrendingUp,
   CheckCircle,
-  DollarSign,
   Clock,
   Briefcase,
   Check
 } from "react-feather";
+import { FaRupeeSign } from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -38,7 +38,7 @@ const Services = () => {
           <div className="program-card">
             <h3><Award className=" heading-icon" /> Program Highlights</h3>
             <ul>
-              <li><DollarSign className="program-icon" /> Coaching Fee: ₹50,000</li>
+              <li><FaRupeeSign className="program-icon" /> Coaching Fee: ₹50,000</li>
               <li><Clock className="program-icon" /> Duration: 6 months (includes internship)</li>
               <li><Briefcase className="program-icon1" /> Job Opportunity: Permanent role based on performance or internship certificate</li>
             </ul>

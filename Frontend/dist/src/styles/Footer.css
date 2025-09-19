@@ -28,9 +28,12 @@
   font-size: 18px;
   transition: color 0.3s;
 }
-.footer-column ul li:hover {
+/* .footer-column ul li:hover {
   color: #0059b3;
-}
+} */
+ .links:hover{
+  color:#0059b3;
+ }
 .footer-logo {
   margin-bottom: 10px;
 }

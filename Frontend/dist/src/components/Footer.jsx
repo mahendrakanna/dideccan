@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h3>DIDeccan India Software Technologies PVT LTD</h3>
+          <h3>DIDeccan India Software Technologies Pvt  Ltd</h3>
           <ul>
             <li>Educational Platform</li>
             <li>Raid booking Platform</li>
@@ -31,9 +31,9 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Product</h3>
           <ul>
-            <li onClick={handlestudentbook}>Student Book</li>
-            <li onClick={handlebusinessguider}>Business Guider</li>
-            <li onClick={handlehappyride}>Happy Ride</li>
+            <li onClick={handlestudentbook} className="links">Student Book</li>
+            <li onClick={handlebusinessguider} className="links">Business Guider</li>
+            <li onClick={handlehappyride} className="links">Happy Ride</li>
           </ul>
         </div>
 
@@ -74,7 +74,7 @@ const Footer = () => {
 
 
             <li>
-              <a href="https://www.instagram.com/dideccanindia?igsh=N3F2bXVkeGNiZGEw">
+              <a href="https://www.instagram.com/dideccanindia?igsh=N3F2bXVkeGNiZGEw"  target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
               </a>
             </li>
