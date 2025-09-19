@@ -11,7 +11,6 @@ function Slide() {
                          preparing for competitive exams, our expert educators are here to guide your child every step of the way.</p>
                 </div>
             </div>
-
         </>
     );
 }
