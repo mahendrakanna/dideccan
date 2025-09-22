@@ -22,7 +22,7 @@ const Services = () => {
         <div className="intro-text">
           <h2>
             Launch Your Tech Career with Our 6-Months Coaching Program!{" "}
-            {/* <Briefcase className="icon" /> */}
+           
           </h2>
           <p>
             We're excited to announce a comprehensive coaching opportunity designed

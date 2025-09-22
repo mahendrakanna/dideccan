@@ -3,6 +3,9 @@
   list-style: none;
   cursor: pointer;
 }
+.about-wrapper span{
+  color:gray;
+}
 .about-content {
   position: absolute;
   top: 100%;

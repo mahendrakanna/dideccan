@@ -20,7 +20,7 @@ import "../../styles/Navbar/AboutPanel.css";
 
   return (
     <li className="about-wrapper" ref={panelRef}>
-      <span onClick={() => setOpen((prev) => !prev)}>About</span>
+      <span onClick={() => setOpen((prev) => !prev)} >About</span>
       <div className={`about-content ${open ? "show" : ""}`}>
         <h2>About DIDeccanIndia</h2>
         <p>

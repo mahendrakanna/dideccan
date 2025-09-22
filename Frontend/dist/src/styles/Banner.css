@@ -34,7 +34,8 @@
 }
 .banner-content p {
   font-size: 1.2rem;                 
-  margin-bottom: 1.25rem;         
+  margin-bottom: 1.25rem; 
+  text-align: justify;        
 }
 .banner-content button {
   padding: 0.625rem 1.25rem;       

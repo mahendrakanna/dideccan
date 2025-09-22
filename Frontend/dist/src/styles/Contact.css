@@ -30,6 +30,10 @@
 .info-list {
   list-style: none;
   padding: 2px;
+ 
+}
+.info-list li a{
+  text-decoration: none;
 }
 .info-list li {
   margin-bottom: 15px;
@@ -37,6 +41,8 @@
   line-height: 1.6;
   display: flex;
   align-items: flex-start;
+  
+  
 }
 .contact-icons{
   padding:0 10px;

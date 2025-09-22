@@ -14,6 +14,9 @@
   transition: opacity 0.3s ease, transform 0.3s ease,
   visibility 0s linear 0.5s;
 }
+.clickable  span{
+  color:gray;
+}
 .services-dropdown.show {
   opacity: 1;
   visibility: visible;
@@ -37,6 +40,17 @@
   font-size: 1rem;
   color: #333;
 }
+/* add
+.service-item{
+  display: flex;
+  
+  gap:5px;
+  justify-content: space-between;
+}
+.service-icon{
+  height: 150px;
+  width: 200px;
+} */
 .services-dropdown li p {
   font-size: 1.0rem;
   color: #555;
@@ -83,3 +97,6 @@
 
 
  
+
+
+  

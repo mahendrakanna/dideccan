@@ -23,6 +23,8 @@
 .client-description {
   line-height: 1.5;
   color: #555;
+  text-align: justify;
+  text-align-last: center;
 }
 .key-features h4 {
   font-size: 1.2rem;

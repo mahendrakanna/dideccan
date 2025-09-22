@@ -27,11 +27,13 @@
   font-size: 2rem;
 }
 .contentbox p {
-  text-align: center;
+  text-align: justify;
   padding: 0rem 2.5rem;
   font-size: 1rem;
   line-height: 1.6;
+  text-align-last: center;
 }
+
 /* 🔹 Responsive Styles */
 @media (max-width: 1024px) {
   .contentbox {
