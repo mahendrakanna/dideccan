@@ -26,8 +26,6 @@ const Footer = () => {
             <li>Business awareness Platform</li>
           </ul>
         </div>
-
-
         <div className="footer-column">
           <h3>Product</h3>
           <ul>
@@ -36,8 +34,6 @@ const Footer = () => {
             <li onClick={handlehappyride} className="links">Happy Ride</li>
           </ul>
         </div>
-
-
         <div className="footer-column">
           <h3>Support</h3>
           <ul>
@@ -46,7 +42,6 @@ const Footer = () => {
             <li>Terms & Conditions</li>
           </ul>
         </div>
-
         <div className="footer-column">
           <div className="footer-logo"><img src={logo} alt="logo" height="50px" width="50px"></img></div>
           <p>
@@ -61,30 +56,19 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
             </li>
-            {/* <li>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <Twitter size={20} />
-              </a>
-            </li> */}
             <li>
               <a href="https://www.linkedin.com/company/dideccan-india-software-technologies-pvt-ltd/" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={20} />
               </a>
             </li>
-
-
             <li>
               <a href="https://www.instagram.com/dideccanindia?igsh=N3F2bXVkeGNiZGEw"  target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
               </a>
             </li>
-
           </ul>
         </div>
       </div>
-
-
-
       <div className="footer-bottom">
         Designed and Developed By DIDeccan India
       </div>

@@ -11,6 +11,8 @@ import BackToTop from '../components/BackToTop';
 import StudentBook from '../Pages/StudentBook';  
 import ScrollToTop from '../Pages/ScrollToTop'; 
 import HappyRide from '../Pages/HappyRide';
+import ServicesDropdown from '../components/Navbar/ServicesDropdown';
+import AboutPanel from '../components/Navbar/AboutPanel';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BusinessGuider from '../Pages/BusinessGuider';
 function Routers() {
@@ -38,6 +40,10 @@ function Routers() {
          <Route path="/BusinessGuider" element={<BusinessGuider />} />
           
            <Route path="/contactus" element={<Contact />} />
+           <Route path="/Services" element={<ServicesDropdown />} />
+           <Route path="/About" element={<AboutPanel/>} />
+           
+           
 
       </Routes>
       
