@@ -1,4 +1,4 @@
- .clients-section {
+ /* .clients-section {
   padding: 60px 20px;
   background-color: #f9f9f9;
 }
@@ -19,13 +19,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center; /* center cards horizontally */
+  justify-content: center; 
 }
 
 .client-card {
   background-color: #fff;
   border-radius: 12px;
-  max-width: 700px; /* limit width so multiple cards fit side by side */
+  max-width: 700px;
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 30px;
@@ -81,7 +81,7 @@
   min-height: 24px;
   margin-top: 2px;
 }
-/* Responsive for smaller screens */
+
 @media (max-width: 768px) {
   .clients-cards-container {
     flex-direction: column;
@@ -97,7 +97,176 @@
   .client-logo {
     width: 50px;
     height: 50px;
+   
   }
 }
 
+ */
+
+ .clients-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.clients-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clients-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Cards container */
+.clients-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; 
+}
+
+/* Card */
+.client-card {
+  background-color: #fff;
+  border-radius: 12px;
+  flex: 1 1 45%; 
+  max-width: 600px;
+  min-width: 280px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header inside card */
+.client-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.client-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid #0056a0;
+}
+
+.client-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0056a0;
+}
+
+.client-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+
+.key-features h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #0056a0;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.client-icons {
+  color: #0056a0;
+  min-width: 24px;
+  min-height: 24px;
+  margin-top: 2px;
+}
+
+
+@media (max-width: 1200px) {
+  .client-card {
+    flex: 1 1 48%; 
+  }
+}
+
+
+@media (max-width: 992px) {
+  .clients-header h2 {
+    font-size: 2.0rem;
+  }
+  .client-card {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+
+  .client-header {
+    justify-content: flex-start;
+  }
+}
+
+/* Tablets portrait */
+@media (max-width: 768px) {
+  .clients-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .client-card {
+    padding: 20px;
+  }
+  .client-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .client-name {
+    font-size: 1.5rem;
+  }
+   .client-description {
+    font-size: 0.9rem;
+  }
+  .feature{
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+  .clients-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .client-card {
+    padding: 15px;
+  }
+
+  .client-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .client-name {
+    font-size: 1.2rem;
+  }
+
+  .client-description {
+    font-size: 0.8rem;
+  }
+  .feature{
+    font-size: 0.8rem;
+  }
+}
 
