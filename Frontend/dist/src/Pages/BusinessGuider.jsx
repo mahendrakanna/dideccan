@@ -5,7 +5,7 @@ import bannerimage3 from "../assets/images/bannerimage3.png"; // use your own im
 function BusinessGuider() {
   return (
     <div>
-      <h2 className="heading">Our Products</h2>
+      <h2 className="product-heading">Our Products</h2>
       <div className="product-page"> 
         <div className="product-card"> 
           <div className="product-image">

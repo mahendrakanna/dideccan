@@ -39,7 +39,7 @@ function Navbar() {
               to="/Services" 
               className={({ isActive }) => isActive ? "active-link" : ""}
             >
-              services
+              Services
             </NavLink>
           </li>
           <li>

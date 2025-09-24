@@ -29,7 +29,6 @@
 
 import React from "react";
 import "../../styles/Navbar/AboutPanel.css";
-
 function AboutPanel() {
   return (
     <div className="about-container">
@@ -50,7 +49,6 @@ function AboutPanel() {
           create opportunities for skilled professionals across the country.
         </p>
       </div>
-
       <div className="section">
         <h2 className="heading">Our Values</h2>
         <ul className="list">
@@ -74,7 +72,6 @@ function AboutPanel() {
           </li>
         </ul>
       </div>
-
       <div className="section">
         <h2 className="heading">What We Do</h2>
         <ul className="list">

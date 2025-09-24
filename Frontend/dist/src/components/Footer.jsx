@@ -4,6 +4,7 @@ import { Facebook,  Linkedin, Instagram } from "react-feather";
 import logo from "../assets/images/logo.png";
 import { useNavigate } from "react-router-dom"; 
 
+
 const Footer = () => {
   const navigate = useNavigate();
   const handlestudentbook = () => {
@@ -14,6 +15,15 @@ const Footer = () => {
   };
   const handlebusinessguider= () => {
     navigate("/BusinessGuider"); 
+  };
+  const handleFAQ= () => {
+    navigate("/FAQ"); 
+  };
+   const handlePrivacyPolicy= () => {
+    navigate("/PrivacyPolicy"); 
+  };
+  const handleTermsConditions= () => {
+    navigate("/TermsConditions"); 
   };
   return (
     <footer className="footer">
@@ -37,9 +47,9 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Support</h3>
           <ul>
-            <li>FAQ</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
+            <li onClick={handleFAQ} className="links">FAQ</li>
+            <li onClick={handlePrivacyPolicy} className="links">Privacy Policy</li>
+            <li onClick={handleTermsConditions} className="links">Terms & Conditions</li>
           </ul>
         </div>
         <div className="footer-column">
