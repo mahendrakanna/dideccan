@@ -1,42 +1,26 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { RefreshCcw, Monitor, Smartphone, CheckCircle, Cpu } from 'react-feather';
+import React from 'react';
 import '../../styles/Navbar/ServicesDropdown.css';
+import Webdevelopment from '../../assets/images/Webdevelopment.png';
+import Devops from '../../assets/images/Devops.png';
+import Softwaretesting from '../../assets/images/Softwaretesting.png';
+import Aidatascience from '../../assets/images/Aidatascience.png';
 
- function ServicesDropdown() {
-  const [open, setOpen] = useState(false);
-  const dropdownRef = useRef(null);
-
-  const handleToggle = () => {
-    setOpen(prev => !prev);
-  };
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpen(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
+function ServicesSection() {
   return (
-    <li className="clickable services-dropdown-container" ref={dropdownRef}>
-      <span onClick={handleToggle}>Services</span>
-      <div className={`services-dropdown ${open ? 'show' : ''}`}>
-        <h3>Our Services</h3>
-        <p>
-          At DIDeccanIndia, we not only build our own innovative products
-          but also offer a range of technology services to help businesses grow,
-          scale, and succeed in the digital world.
-        </p>
+    <section className="services-dropdown">
+      <h3>Our Services</h3>
+      <p>
+       At DIDeccanIndia, we not only build our own innovative products but also offer a wide 
+       range of technology services to help businesses grow, scale, and succeed in the digital 
+       world. With a strong focus on innovation, quality, and customer-centric solutions,  we empower organizations to leverage 
+       the latest technologies, optimize their operations, and achieve sustainable growth.
+      </p>
 
-        <ul>
-          <li>
-            <strong><RefreshCcw size={15} color="orange"  /> DevOps (AWS)</strong>
+      <ul className='services-container'>
+        <li className="service-item">
+          <img src={Devops} alt="DevOps" className="service-icon" />
+          <div className="service-content">
+            <strong className="sub-headings">DevOps (AWS)</strong>
             <p>
               We offer DevOps solutions with a strong focus on Amazon Web Services (AWS) to ensure fast, secure, 
               and scalable infrastructure. Our services include:<br />
@@ -45,30 +29,40 @@ import '../../styles/Navbar/ServicesDropdown.css';
               • Infrastructure automation <br />
               • Monitoring & optimization
             </p>
-          </li>
+          </div>
+        </li>
 
-          <li>
-            <strong><Monitor size={15} color="blue"  /> <Smartphone size={15} color="blue" /> Web & Mobile Development</strong>
+        <li className="service-item">
+          
+          <div className="service-content">
+            <strong className="sub-headings">Web & Mobile Development</strong>
             <p>
               We develop high-performance web and mobile applications using modern technologies:<br />
               • React.js for web interfaces <br />
               • React Native for mobile apps <br />
               • Python for backend & APIs
             </p>
-          </li>
+          </div>
+          <img src={Webdevelopment} alt="Web & Mobile" className="service-imgright" />
+        </li>
 
-          <li>
-            <strong><CheckCircle size={15} color="green"  /> Software Testing</strong>
+        <li className="service-item">
+          <img src={Softwaretesting} alt="Software Testing" className="service-icon" />
+          <div className="service-content">
+            <strong className="sub-headings">Software Testing</strong>
             <p>
               Our QA team ensures your applications are bug-free, reliable, and user-ready:<br />
               • Manual & automated testing <br />
               • Performance & load testing <br />
               • Compatibility & security testing
             </p>
-          </li>
+          </div>
+        </li>
 
-          <li>
-            <strong><Cpu size={15} color="purple"  /> AI & Data Science</strong>
+        <li className="service-item">
+          
+          <div className="service-content">
+            <strong className="sub-headings">AI & Data Science</strong>
             <p>
               We help businesses unlock the power of data through:<br />
               • Machine learning <br />
@@ -76,12 +70,16 @@ import '../../styles/Navbar/ServicesDropdown.css';
               • Natural language processing <br />
               • Data visualization
             </p>
-          </li>
-        </ul>
-      </div>
-    </li>
+          </div>
+          <img src={Aidatascience} alt="AI & Data Science" className="service-imgright" />
+        </li>
+      </ul>
+    </section>
   );
 }
-export default  ServicesDropdown
+
+export default ServicesSection;
+
+
 
 

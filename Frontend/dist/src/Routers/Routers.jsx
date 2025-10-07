@@ -11,8 +11,13 @@ import BackToTop from '../components/BackToTop';
 import StudentBook from '../Pages/StudentBook';  
 import ScrollToTop from '../Pages/ScrollToTop'; 
 import HappyRide from '../Pages/HappyRide';
+import ServicesDropdown from '../components/Navbar/ServicesDropdown';
+import AboutPanel from '../components/Navbar/AboutPanel';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BusinessGuider from '../Pages/BusinessGuider';
+import FAQ from '../Pages/FAQ';
+import PrivacyPolicy from '../Pages/PrivacyPolicy';
+import TermsConditions from '../Pages/TermsConditions';
 function Routers() {
   return (
     <Router>
@@ -36,8 +41,15 @@ function Routers() {
         <Route path="/StudentBook" element={<StudentBook />} />
         <Route path="/HappyRide" element={<HappyRide />} />
          <Route path="/BusinessGuider" element={<BusinessGuider />} />
+         <Route path="/FAQ" element={<FAQ />} />
+         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+         <Route path="/TermsConditions" element={<TermsConditions />} />
           
            <Route path="/contactus" element={<Contact />} />
+           <Route path="/Services" element={<ServicesDropdown />} />
+           <Route path="/About" element={<AboutPanel/>} />
+           
+           
 
       </Routes>
       

@@ -4,6 +4,7 @@ import { Facebook,  Linkedin, Instagram } from "react-feather";
 import logo from "../assets/images/logo.png";
 import { useNavigate } from "react-router-dom"; 
 
+
 const Footer = () => {
   const navigate = useNavigate();
   const handlestudentbook = () => {
@@ -14,6 +15,15 @@ const Footer = () => {
   };
   const handlebusinessguider= () => {
     navigate("/BusinessGuider"); 
+  };
+  const handleFAQ= () => {
+    navigate("/FAQ"); 
+  };
+   const handlePrivacyPolicy= () => {
+    navigate("/PrivacyPolicy"); 
+  };
+  const handleTermsConditions= () => {
+    navigate("/TermsConditions"); 
   };
   return (
     <footer className="footer">
@@ -26,8 +36,6 @@ const Footer = () => {
             <li>Business awareness Platform</li>
           </ul>
         </div>
-
-
         <div className="footer-column">
           <h3>Product</h3>
           <ul>
@@ -36,17 +44,14 @@ const Footer = () => {
             <li onClick={handlehappyride} className="links">Happy Ride</li>
           </ul>
         </div>
-
-
         <div className="footer-column">
           <h3>Support</h3>
           <ul>
-            <li>FAQ</li>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
+            <li onClick={handleFAQ} className="links">FAQ</li>
+            <li onClick={handlePrivacyPolicy} className="links">Privacy Policy</li>
+            <li onClick={handleTermsConditions} className="links">Terms & Conditions</li>
           </ul>
         </div>
-
         <div className="footer-column">
           <div className="footer-logo"><img src={logo} alt="logo" height="50px" width="50px"></img></div>
           <p>
@@ -61,30 +66,19 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
             </li>
-            {/* <li>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <Twitter size={20} />
-              </a>
-            </li> */}
             <li>
               <a href="https://www.linkedin.com/company/dideccan-india-software-technologies-pvt-ltd/" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={20} />
               </a>
             </li>
-
-
             <li>
               <a href="https://www.instagram.com/dideccanindia?igsh=N3F2bXVkeGNiZGEw"  target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
               </a>
             </li>
-
           </ul>
         </div>
       </div>
-
-
-
       <div className="footer-bottom">
         Designed and Developed By DIDeccan India
       </div>

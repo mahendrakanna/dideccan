@@ -17,6 +17,9 @@
 .login-btn:hover {
   background: #0056a0;
 }
+.error{
+  color:red;
+}
 .form-overlay {
   position: fixed;
   top: 0;

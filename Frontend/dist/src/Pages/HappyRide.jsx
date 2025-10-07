@@ -5,7 +5,7 @@ import Happyrideimage from "../assets/images/Happyrideimage1.png";
 function HappyRide() {
   return (
     <div>
-      <h2 className="heading">Our Products</h2>
+      <h2 className="product-heading">Our Products</h2>
       <div className="product-page"> 
         <div className="product-card"> 
           <div className="product-image">
