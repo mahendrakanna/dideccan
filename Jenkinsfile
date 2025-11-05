@@ -18,7 +18,7 @@ pipeline {
         stage('Setup Python Env (Django)') {
             steps {
                 dir("${DJANGO_DIR}") {
-                    sh 'bash -c "python3 -m venv ${PYTHON_ENV} && source ${PYTHON_ENV}/bin/activate && pip install --upgrade pip && pip install -r dist/requirement.txt"'
+                    sh 'bash -c "python3 -m venv ${PYTHON_ENV} && source ${PYTHON_ENV}/bin/activate && pip install --upgrade pip && pip install -r dist/requirements.txt"'
                 }
             }
         }
