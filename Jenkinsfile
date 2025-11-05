@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         REPO_URL = 'https://github.com/mahendrakanna/dideccan.git'
-        DJANGO_DIR = 'backend'
+        DJANGO_DIR = 'Backend'
         REACT_DIR  = 'frontend'
         PYTHON_ENV = '.venv'
     }
